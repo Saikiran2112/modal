@@ -1,0 +1,40 @@
+#modal-container{
+    position:fixed;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100vw;
+    background-color: rgba(0,0,0,0.1);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    margin-top:50vh;
+}
+#btn{
+    border:none;
+    background-color: #000;
+    color:white;
+    font-size: 30px;
+    cursor: pointer;
+    padding:10px;
+    border-radius: 3px;
+}
+#modal{
+    background-color: white;
+    text-align: center;
+    width:500px;
+    
+   
+}
+#modal-container.show{
+    opacity:1;
+    pointer-events: auto;
+}
+
